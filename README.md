@@ -1,1 +1,1 @@
-# CSPLayerWithTwoConvText.py
+# CSPLayerWithTwoConvText
