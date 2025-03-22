@@ -59,6 +59,37 @@ In short, **the “new” PAN retains the original YOLO-World structure** but **
 
 ---
 
+# References for the New PAN (Iterative Cross-Attention Design)
 
+The **new, iterative cross-attention PAN** in YOLO-World draws on ideas from several recent **vision-language** and **feature-fusion** approaches, including:
+
+1. **GLIP: Grounded Language-Image Pre-training**  
+   - *Li et al., CVPR 2022*  
+   - [Paper](https://arxiv.org/abs/2112.03857)  
+   - **Key Idea Borrowed**: Unifying object detection and language grounding in a single framework; leveraging cross-attention to align text and regions.
+
+2. **GLIPv2: Unifying Localization and Vision-Language Understanding**  
+   - *Zhang et al., NeurIPS 2022*  
+   - [Paper](https://arxiv.org/abs/2212.05042)  
+   - **Key Idea Borrowed**: Iterative region-text matching; refining text embeddings with image features across multiple stages.
+
+3. **Grounding DINO**  
+   - *Liu et al., 2023*  
+   - [Paper](https://arxiv.org/abs/2303.05499)  
+   - **Key Idea Borrowed**: Using transformer-based cross-attention for open-set object detection, repeatedly aligning text tokens and image features to handle complex or rare categories.
+
+4. **FiLM: Visual Reasoning with a General Conditioning Layer**  
+   - *Perez et al., AAAI 2018*  
+   - [Paper](https://arxiv.org/abs/1709.07871)  
+   - **Key Idea Borrowed**: Feature-wise Linear Modulation (FiLM) to generate `(gamma, beta)` from text, scaling and shifting CNN feature maps for more powerful conditioning.
+
+5. **YOLO-World** (itself)  
+   - *Cheng et al.*  
+   - [GitHub: AILab-CVC/YOLO-World](https://github.com/AILab-CVC/YOLO-World)  
+   - **Key Idea Borrowed**: RepVL-PAN structure, which introduced the concept of T-CSPLayer + I-Pooling Attention for text–image fusion in a YOLO-based pipeline. The new iterative design builds on this foundation, adding multi-stage cross-attention and FiLM gating.
+
+By **combining** the multi-stage text-image alignment strategies from GLIP, GLIPv2, and Grounding DINO, plus FiLM-style feature modulation, the **new PAN** can refine each scale’s features with text embeddings over multiple passes, yielding stronger open-vocabulary detection performance. 
+
+![image](https://github.com/user-attachments/assets/a1179284-8907-42ba-bb0c-1cecda4e80b5)
 
 
