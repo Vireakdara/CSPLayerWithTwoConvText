@@ -90,7 +90,8 @@ The **new, iterative cross-attention PAN** in YOLO-World draws on ideas from sev
 
 By **combining** the multi-stage text-image alignment strategies from GLIP, GLIPv2, and Grounding DINO, plus FiLM-style feature modulation, the **new PAN** can refine each scale’s features with text embeddings over multiple passes, yielding stronger open-vocabulary detection performance. 
 
-![image](https://github.com/user-attachments/assets/9202d017-6bf7-4f0a-a32d-b7f467a3bd72)
+![image](https://github.com/user-attachments/assets/e262f83f-32b9-4f75-b1c9-8c01d36664d9)
+
 
 
 
