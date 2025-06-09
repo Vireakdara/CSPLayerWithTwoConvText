@@ -16,7 +16,7 @@ Below is a side-by-side comparison of the **original YOLO-World PAN** (Path Aggr
 - **Single-Pass Fusion**: Typically one pass of text→image and one pass of image→text alignment per scale.
 
 ### New PAN (Iterative Cross-Attention)
-![image](https://github.com/user-attachments/assets/e262f83f-32b9-4f75-b1c9-8c01d36664d9)
+![image](https://github.com/user-attachments/assets/5b4be970-bbed-463f-b080-91f441a9c589)
 
 - **Same Overall Structure**: Still top-down, then bottom-up with multi-scale outputs.  
 - **Text-Aware CSP Blocks**: Replaces or augments T-CSPLayer with a new module that applies **multi-stage cross-attention** (and optionally FiLM gating).  
