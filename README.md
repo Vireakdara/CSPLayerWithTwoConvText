@@ -1,4 +1,3 @@
-# PAN
 # Comparison: Original YOLO-World PAN vs. New Iterative Cross-Attention PAN
 
 Below is a side-by-side comparison of the **original YOLO-World PAN** (Path Aggregation Network) and the **new, modified PAN** that integrates deeper vision-language fusion. Both retain the same multi-scale top-down and bottom-up structure, but the new version adds iterative cross-attention and optional FiLM gating for richer alignment with textual prompts.
